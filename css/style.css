@@ -231,6 +231,15 @@ main {
   border: 0.5px solid #000;
 }
 
+@media screen and (max-width: 715px) {
+  body {
+width: 100%;
+margin: 0 auto;
+background-image: none;
+background-size: unset;
+}
+}
+
 @media screen and (max-width: 414px) {
   body {
 width: 100%;
