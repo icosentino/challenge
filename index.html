@@ -1,1 +1,112 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hexacta Challenge</title>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- ICONS -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+</head>
+
+<body>
+  <header class="site-header">
+    <p class="brand">SKY 105</p>
+    <p class="time">9:35AM</p>
+    <p class="temperature">76F</p>
+  </header>
+
+  <main>
+    <section class="current-floor">
+      <h2>Current Floor</h2>
+      <div class="main-floor">
+        <i data-feather="navigation-2" class="lift-up"></i>
+
+        <h1>32</h1>
+      </div>
+    </section>
+    <hr class="divider">
+    <section class="second-options">
+      <div class="people">
+          <object data="../img/weight_capacity.svg" width="134" height="22"> </object>
+        <p>Capacity: 8 people</p>
+        <p>Weight: 850kg</p>
+      </div>
+
+      <div class="alarm">
+        <i data-feather="bell" class="icon"></i>
+        <p>Alarm</p>
+      </div>
+
+      <div class="fan">
+        <i data-feather="wind" class="icon"></i>
+        <p>Fan</p>
+      </div>
+
+      <div class="lights">
+        <i data-feather="sun" class="icon"></i>
+        <p>Lights</p>
+      </div>
+    </section>
+<hr class="divider">
+    <section class="next-stops">
+      <p>Next stops</p>
+      <div class="display-stops">
+        <p>103</p>
+        <p>99</p>
+        <p>78</p>
+        <p>64</p>
+        <p>55</p>
+        <p>42</p>
+        <p>23</p>
+        <p>9</p>
+      </div>
+    </section>
+
+    <section class="numbers-selection">
+      <div class="grid-numbers">
+        <div class="div1 number-button"> 7</div>
+        <div class="div2 number-button"> 8</div>
+        <div class="div3 number-button"> 9</div>
+        <div class="div4 number-button"> 4</div>
+        <div class="div5 number-button"> 5</div>
+        <div class="div6 number-button"> 6</div>
+        <div class="div7 number-button"> 1</div>
+        <div class="div8 number-button"> 2</div>
+        <div class="div9 number-button"> 3</div>
+        <div class="div10 number-button"> Lobby</div>
+        <div class="div11 number-button"> <i data-feather="x" class="cancel"></i></div>
+        <div class="div12 number-button"> Enter</div>
+      </div>
+    </section>
+
+    <section class="doors">
+      <div class="grid-doors">
+        <div class="div1 door-button">
+          <object data="../img/door_close.svg" width="28" height="16"> </object>
+          <span class="text-door-button">Close</span></div>
+        <div class="div2 door-button">
+          <object data="../img/door_open.svg" width="28" height="16"> </object><span class="text-door-button">Open</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="index.js"></script>
+  <script>
+    feather.replace()
+  </script>
+
+</body>
+
+</html>

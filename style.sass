@@ -1,0 +1,210 @@
+//colors
+$black: #000
+$white: #fff
+$concrete: #f2f2f2
+$gray: #888
+
+//fonts
+$font-primary: Poppins
+$font-backup: sans-serif
+
+//fonts size
+$dog: 1rem
+$lion: 1.625rem
+$hippo: 2.625rem
+$elephant: 6.875rem
+
+body
+	width: 768px
+	margin: 40px auto
+	background-image: url(https://source.unsplash.com/gnDbEnWFMWs/1600x900)
+	background-size: cover
+
+*
+	&:before
+		box-sizing: inherit
+
+	&:after
+		box-sizing: inherit
+
+h1
+	font-size: $elephant
+	font-family: $font-primary, $font-backup
+	font-weight: 600
+	line-height: 0.75
+	padding-left: 10px
+
+h2
+	font-size: $lion
+	font-family: $font-primary, $font-backup
+	font-weight: 400
+
+.site-header
+	display: flex
+	justify-content: space-between
+	background-color: $black
+	padding: 10px 20px
+	p
+		color: $white
+		font-family: $font-primary, $font-backup
+		font-weight: 400
+
+
+main
+	background-color: $concrete
+
+.current-floor
+	display: block
+	padding-top: $hippo
+	padding: 20px 10px
+	text-align: center
+
+.main-floor
+	display: flex
+	padding-top: 10px
+	justify-content: center
+
+.feather-navigation-2
+	fill: $black
+	width: 42px
+	height: 42px
+
+.second-options
+	padding: 10px 20px
+	display: flex
+	justify-content: space-between
+	font-family: $font-primary, $font-backup
+	font-weight: 400
+	font-size: $dog
+	line-height: 1.3
+	text-align: center
+	color: $color_gray_approx
+
+.icon
+	border: 1px solid $gray
+	//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+	border-radius: 100px
+	width: 48px
+	height: 48px
+	padding: 10px
+
+.next-stops
+	padding: 10px 20px
+	p
+		font-family: $font-primary, $font-backup
+		font-weight: 400
+		color: $gray
+		margin-bottom: 10px
+
+
+.display-stops
+	display: flex
+	justify-content: space-between
+	p
+		font-family: $font-primary, $font-backup
+		font-weight: 400
+		font-size: $lion
+		color: $black
+
+
+.numbers-selection
+	background-color: $black
+	padding-top: 30px
+
+.grid-numbers
+	display: grid
+	grid-template-columns: repeat(3, 1fr)
+	grid-template-rows: repeat(5, 1fr)
+	grid-column-gap: 10px
+	grid-row-gap: 10px
+	color: $white
+	width: max-content
+	margin: 0 auto
+
+.div1
+	grid-area: 1 / 1 / 2 / 2
+
+.div2
+	grid-area: 1 / 2 / 2 / 3
+
+.div3
+	grid-area: 1 / 3 / 2 / 4
+
+.div4
+	grid-area: 2 / 1 / 3 / 2
+
+.div5
+	grid-area: 2 / 2 / 3 / 3
+
+.div6
+	grid-area: 2 / 3 / 3 / 4
+
+.div7
+	grid-area: 3 / 1 / 4 / 2
+
+.div8
+	grid-area: 3 / 2 / 4 / 3
+
+.div9
+	grid-area: 3 / 3 / 4 / 4
+
+.div10
+	grid-area: 4 / 1 / 5 / 4
+
+.div11
+	grid-area: 5 / 1 / 6 / 2
+
+.div12
+	grid-area: 5 / 2 / 6 / 4
+
+.number-button
+	font-family: $font-primary, $font-backup
+	font-size: $lion
+	font-weight: 400
+	border: 1px solid $white
+	padding: 22px 36px
+	//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+	border-radius: 8px
+	text-align: center
+
+.doors
+	background-color: $black
+	padding: 30px 0
+
+.grid-doors
+	display: grid
+	grid-template-columns: repeat(2, 1fr)
+	grid-template-rows: 1fr
+	grid-column-gap: 10px
+	grid-row-gap: 10px
+	width: max-content
+	margin: 0 auto
+
+.door-button
+	font-family: $font-primary, $font-backup
+	font-size: $dog
+	font-weight: 400
+	border: 1px solid $white
+	color: $white
+	padding: 22px 48px
+	//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+	border-radius: 8px
+	text-align: center
+
+.text-door-button
+	margin-left: 15px
+
+.divider
+	margin: 0
+	border: 0.5px solid $black
+
+@media screen and(max-width: 414px)
+	body
+		width: 100%
+		margin: 0 auto
+		background-image: none
+		background-size: unset
+
+
+.people p
+	letter-spacing: -0.06em
